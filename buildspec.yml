@@ -11,7 +11,6 @@ phases:
       - echo "CI validation started"
       - echo "Checking whether index.html exists"
       - test -f index.html
-      - echo "Mallikarjun Index.html exists"
       - echo "Checking whether Attari Classes text exists"
       - grep -q "Attari Classes" index.html
       - echo "Attari Classes exists in index.html file"
