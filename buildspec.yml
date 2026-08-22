@@ -12,7 +12,7 @@ phases:
       - echo "Checking whether index.html exists"
       - test -f index.html
       - echo "Checking whether Attari Classes text exists"
-      - grep -Eq '(^|[^[:alnum:]])Attari Classes([^[:alnum:]]|$)' index.html
+      - grep -q '<h1>Attari Classes ' index.html
       - echo "Attari Classes exists in index.html file"
       - echo "CI validation passed"
 
